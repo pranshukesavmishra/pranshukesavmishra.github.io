@@ -1,0 +1,91 @@
+{
+  "personal": {
+    "name": "Pranshu Mishra",
+    "title": "Mechatronics Engineer & AI Mentor",
+    "tagline": "Integrating robotics, Generative AI, and Agentic system design.",
+    "bio": "Mechatronics Engineer specializing in the convergence of physical systems, robotics, and advanced AI. I design virtual lab platforms and mentor developers on building autonomous Agentic AI architectures.",
+    "email": "pranshu.mishra.work@gmail.com",
+    "github": "https://github.com",
+    "linkedin": "https://www.linkedin.com/in/pranshu-mishra-3757032ba/",
+    "location": "India",
+    "phone": "+91 9467871448",
+    "resumeUrl": "#"
+  },
+  "stats": [
+    { "label": "Students Mentored", "value": "1000+" },
+    { "label": "Agents & Labs Built", "value": "25+" },
+    { "label": "Embedded Node Systems", "value": "12+" }
+  ],
+  "skills": [
+    { "category": "AI & Machine Learning", "items": [
+      { "name": "Generative AI (LLMs)", "level": 95 },
+      { "name": "Agentic AI Frameworks", "level": 90 },
+      { "name": "Machine Learning Models", "level": 85 },
+      { "name": "Python & Data Science", "level": 90 }
+    ]},
+    { "category": "Mechatronics & Robotics", "items": [
+      { "name": "Control Systems & IoT", "level": 85 },
+      { "name": "ROS (Robot Operating System)", "level": 80 },
+      { "name": "Embedded C/C++", "level": 85 },
+      { "name": "MATLAB / CAD Modeling", "level": 75 }
+    ]},
+    { "category": "Virtual Labs & Front End", "items": [
+      { "name": "Virtual Lab Orchestration", "level": 90 },
+      { "name": "HTML5 / CSS3 / Vanilla JS", "level": 85 },
+      { "name": "React & Node.js", "level": 80 },
+      { "name": "WebSockets & Telemetry", "level": 85 }
+    ]},
+    { "category": "Tools & Environments", "items": [
+      { "name": "Git & GitHub Version Control", "level": 90 },
+      { "name": "Docker & Containerization", "level": 80 },
+      { "name": "Linux Shell & Scripting", "level": 85 },
+      { "name": "Cloud Platforms (AWS/GCP)", "level": 75 }
+    ]}
+  ],
+  "experience": [
+    {
+      "role": "Generative AI, Agentic AI & ML Mentor",
+      "company": "AI & Advanced Automation Labs",
+      "period": "2024 - Present",
+      "description": "• Mentored 1000+ developers on LLMs, custom training pipelines, and multi-agent design.<br>• Conducted structured bootcamps covering LangChain, crewAI, and AutoGen integration.<br>• Led training modules focused on local deployment of open-source models (Ollama, vLLM)."
+    },
+    {
+      "role": "Virtual Labs Systems Architect",
+      "company": "Academic & Scientific Research Initiatives",
+      "period": "2023 - 2024",
+      "description": "• Architected dynamic web-based simulation spaces for engineering laboratory courses.<br>• Managed WebSocket pipelines to stream real-time physics data between servers and browser UI.<br>• Built scalable telemetry interfaces rendering complex mathematical and control graphs."
+    },
+    {
+      "role": "Mechatronics Development Specialist",
+      "company": "Embedded & Robotics Projects",
+      "period": "2022 - 2023",
+      "description": "• Developed real-time firmware for sensor logging, telemetry, and motor control using ESP32/Arduino.<br>• Configured node communicators using ROS and micro-ROS for automated vehicle navigation.<br>• Implemented PID control loops and telemetry sensors in customized robotic configurations."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Agentic Robotic Arm Controller",
+      "description": "Robotics simulation translating natural language requests into direct ROS motion pathways using an LLM coordinator.",
+      "tags": ["Agentic AI", "ROS", "Python", "WebSockets"],
+      "githubUrl": "https://github.com",
+      "liveUrl": "https://github.com",
+      "image": "placeholder_project1.png"
+    },
+    {
+      "title": "GenAI Virtual Lab Assistant",
+      "description": "Interactive workspace embedding a local LLM tutor to score report files and guide student lab steps in real-time.",
+      "tags": ["Generative AI", "React", "Node.js", "MongoDB"],
+      "githubUrl": "https://github.com",
+      "liveUrl": "https://github.com",
+      "image": "placeholder_project2.png"
+    },
+    {
+      "title": "Autonomous Embedded Telemetry",
+      "description": "Real-time dashboard charting high-frequency sensor streams from custom C++ microcontrollers.",
+      "tags": ["C/C++", "IoT", "Next.js", "Chart.js"],
+      "githubUrl": "https://github.com",
+      "liveUrl": "https://github.com",
+      "image": "placeholder_project3.png"
+    }
+  ]
+}

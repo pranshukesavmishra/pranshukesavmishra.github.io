@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pranshu Mishra - Full Stack Software Engineer Portfolio. Discover high-performance web systems, interactive CLI shells, and modern responsive designs.">
+  <title>Pranshu Mishra | Portfolio</title>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Dynamic Canvas Background -->
+  <canvas id="bgCanvas"></canvas>
+  
+  <!-- Overlay Glowing Background Orbs -->
+  <div class="bg-glows">
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="logo">
+      PRANSHU MISHRA <span>&lt;dev&gt;</span>
+    </div>
+    <nav>
+      <a href="#about" class="active">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-buttons">
+      <!-- CLI Trigger -->
+      <button class="btn-icon" id="terminalOpenBtn" title="Launch Interactive CLI Terminal (`)">
+        <i class="fas fa-terminal"></i>
+      </button>
+      <!-- Admin Customizer Trigger -->
+      <button class="btn-icon" id="adminOpenBtn" title="Customize Portfolio Settings">
+        <i class="fas fa-sliders-h"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Landing Section -->
+  <section class="hero" id="home">
+    <span class="hero-sub">Hi, my name is</span>
+    <h1 class="gradient-text"><span class="user-name">Pranshu Mishra</span>.</h1>
+    <h2 id="typedTitle">Designing high-performance systems</h2>
+    <p id="heroTagline">Crafting scalable backend architectures and gorgeous responsive frontends.</p>
+    
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">Browse Projects <i class="fas fa-arrow-right"></i></a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="stats-container" id="statsContainer">
+      <!-- Rendered dynamically -->
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01. Biography</span>
+      <h2>About Me</h2>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-text">
+        <p id="aboutBio">Loading bio details...</p>
+        <p>I focus on solving real-world challenges through clean engineering design, database optimization, and intuitive client-side layouts. I am constantly exploring new technologies to sharpen my capabilities.</p>
+        <p>Outside of writing code, you can find me brainstorming open-source contributions, reading tech blogs, or debugging performance metrics.</p>
+      </div>
+      <div class="about-visual">
+        <div class="visual-box">
+          <div class="visual-circle circle-1"></div>
+          <div class="visual-circle circle-2"></div>
+          <div class="visual-core">
+            <i class="fas fa-cubes"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-num">02. Capabilities</span>
+      <h2>Skills & Expertise</h2>
+    </div>
+    
+    <div class="skills-grid" id="skillsGrid">
+      <!-- Rendered dynamically -->
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-header">
+      <span class="section-num">03. Career path</span>
+      <h2>Professional Timeline</h2>
+    </div>
+    
+    <div class="timeline" id="experienceTimeline">
+      <!-- Rendered dynamically -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">04. Deliverables</span>
+      <h2>Featured Work</h2>
+    </div>
+
+    <!-- Tag Filter Buttons -->
+    <div class="projects-filter" id="projectsFilter">
+      <!-- Rendered dynamically -->
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Rendered dynamically -->
+    </div>
+  </section>
+
+  <!-- Contact & Links Section -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">05. Networking</span>
+      <h2>Get In Touch</h2>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's Collaborate</h3>
+        <p>Have an interesting project proposal, open position, or just want to chat about tech? Feel free to reach out using the form, or drop a line via these networks.</p>
+        
+        <div class="contact-methods">
+          <a href="#" class="contact-method-card glass-panel social-email" target="_blank">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value" id="contactValEmail">work@pranshumishra.com</div>
+            </div>
+          </a>
+          
+          <a href="#" class="contact-method-card glass-panel social-linkedin" target="_blank">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Pranshu Mishra Profile</div>
+            </div>
+          </a>
+
+          <a href="#" class="contact-method-card glass-panel social-phone">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Mobile</div>
+              <div class="contact-value" id="contactValPhone">+91 9467871448</div>
+            </div>
+          </a>
+          
+          <div class="contact-method-card glass-panel">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value" id="contactValLocation">India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Contact & Scheduling Tabs Form -->
+      <div class="contact-form-panel">
+        <div class="contact-tabs" style="display: flex; gap: 10px; margin-bottom: 20px;">
+          <button class="tab-btn active" id="btnTabMsg" type="button" style="border: 1px solid var(--border-glass); flex: 1; padding: 12px; font-size: 0.95rem;">Direct Message</button>
+          <button class="tab-btn" id="btnTabMeet" type="button" style="border: 1px solid var(--border-glass); flex: 1; padding: 12px; font-size: 0.95rem;">Schedule a Meet</button>
+        </div>
+
+        <!-- Form 1: Direct Message to WhatsApp -->
+        <form class="contact-form glass-panel" id="contactForm" style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="form-group">
+            <label for="formName">Full Name</label>
+            <input type="text" id="formName" placeholder="Your Name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="formEmail">Email Address</label>
+            <input type="email" id="formEmail" placeholder="your.email@domain.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Message / Proposal</label>
+            <textarea id="formMessage" rows="5" placeholder="Let's build something epic..." required></textarea>
+          </div>
+          
+          <div class="form-status" id="formStatus"></div>
+          
+          <button type="submit" class="btn-primary" style="background: linear-gradient(135deg, #25D366, #128C7E); color: white; border: none; border-radius: 10px; font-weight: 600; padding: 14px 28px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+            Send on WhatsApp <i class="fab fa-whatsapp"></i>
+          </button>
+        </form>
+
+        <!-- Form 2: Schedule Meeting to WhatsApp + Calendar Invite -->
+        <form class="contact-form glass-panel" id="meetForm" style="display: none; flex-direction: column; gap: 20px;">
+          <div class="form-group">
+            <label for="meetName">Full Name</label>
+            <input type="text" id="meetName" placeholder="Your Name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="meetEmail">Email Address</label>
+            <input type="email" id="meetEmail" placeholder="your.email@domain.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="meetDateTime">Select Date & Time</label>
+            <input type="datetime-local" id="meetDateTime" required style="color-scheme: dark;">
+          </div>
+          <div class="form-group">
+            <label for="meetMessage">Topic / Agenda</label>
+            <textarea id="meetMessage" rows="3" placeholder="What would you like to discuss?" required></textarea>
+          </div>
+          
+          <div class="form-status" id="meetStatus"></div>
+          
+          <button type="submit" class="btn-primary" style="border: none; border-radius: 10px; font-weight: 600; padding: 14px 28px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+            Schedule & Notify <i class="fas fa-calendar-check"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal CLI Overlay -->
+  <div class="terminal-overlay" id="terminalOverlay">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="dot dot-red" id="terminalClose" title="Exit Terminal (GUI Mode)"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="terminal-title">zsh — guest@pranshu: ~</div>
+        <div></div>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <!-- Interactive shell populated by terminal.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Interactive Panel Overlay -->
+  <div class="admin-overlay" id="adminOverlay">
+    <div class="admin-window glass-panel">
+      <div class="admin-header">
+        <h3>Portfolio Customizer Dashboard</h3>
+        <button class="btn-icon" id="adminClose"><i class="fas fa-times"></i></button>
+      </div>
+      
+      <div class="admin-body">
+        <div class="admin-tabs-nav">
+          <button class="tab-btn active" data-tab="admTabPersonal" type="button">Personal Info</button>
+          <button class="tab-btn" data-tab="admTabProjects" type="button">Manage Projects</button>
+        </div>
+        
+        <!-- Tab: Personal -->
+        <div class="admin-tab active" id="admTabPersonal">
+          <div class="admin-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" id="admName">
+            </div>
+            <div class="form-group">
+              <label>Title</label>
+              <input type="text" id="admTitle">
+            </div>
+          </div>
+          
+          <div class="admin-row">
+            <div class="form-group">
+              <label>Location</label>
+              <input type="text" id="admLocation">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="admEmail">
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="form-group">
+              <label>GitHub Link</label>
+              <input type="text" id="admGithub">
+            </div>
+            <div class="form-group">
+              <label>LinkedIn Link</label>
+              <input type="text" id="admLinkedin">
+            </div>
+          </div>
+
+          <div class="admin-row">
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input type="text" id="admPhone">
+            </div>
+            <div class="form-group">
+              <label>Resume Link</label>
+              <input type="text" id="admResume">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Hero Tagline</label>
+            <input type="text" id="admTagline">
+          </div>
+
+          <div class="form-group">
+            <label>Biography Summary</label>
+            <textarea id="admBio" rows="4" style="resize:vertical;"></textarea>
+          </div>
+        </div>
+        
+        <!-- Tab: Projects -->
+        <div class="admin-tab" id="admTabProjects">
+          <button class="btn-primary" id="addProjBtn" style="margin-bottom: 20px;" type="button">
+            <i class="fas fa-plus"></i> Add Project
+          </button>
+          <div id="admProjectsList">
+            <!-- Populated dynamically with project inputs -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="admin-footer">
+        <button class="btn-secondary" onclick="document.getElementById('adminOverlay').style.display='none'" type="button">Cancel</button>
+        <button class="btn-primary" id="adminSave" type="button">Compile & Export JSON <i class="fas fa-download"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2026 Pranshu Mishra. All Rights Reserved.</p>
+    <p style="margin-top: 8px; font-size: 0.8rem;">
+      Designed in a highly unique style with <i class="fas fa-terminal" style="color: var(--accent-cyan);"></i> Shell Mode. 
+      Access shell via <span style="font-family: var(--font-mono); color: var(--accent-purple);">\`</span> keyboard toggle.
+    </p>
+  </footer>
+
+  <!-- Scripts Execution Order -->
+  <script src="js/canvas-particles.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/admin-editor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
